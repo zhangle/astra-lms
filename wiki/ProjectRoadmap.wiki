@@ -1,4 +1,4 @@
-#summary Describes the roadmap for the Astra 0.1 release.
+#summary Describes the roadmap for the future Astra releases.
 #labels Phase-Design
 
 = 0.1 Release =
