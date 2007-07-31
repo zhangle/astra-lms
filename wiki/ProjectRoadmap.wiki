@@ -1,0 +1,31 @@
+#summary Describes the roadmap for the Astra 0.1 release.
+#labels Phase-Design
+
+= 0.1 Release =
+
+== Week 1 (30/07/2007 up to  05/07/2007) ==
+
+In the first week the most basic features that a LMS should have will get implemented.
+
+ * Course management
+  * Implement it similar to Moodle's section format.
+  * Allow admin to manage course CRUD operations
+ * User management
+  * Admin interface
+   * Allow admin to manage user CRUD operations
+  * Teacher's interface
+  * Student's interface
+   * Allow student's to update their profile
+ * Authentication System
+
+== Weeks 2 and 3 (06/07/2007 up to 18/07/2007) ==
+
+
+
+ * SCORM 2004 3rd Edition implementation
+  * Allow teachers to upload a new SCORM package into a course topic
+  * Allow students to interact with the SCORM Learning Objects
+
+== Details ==
+
+Each phase includes the creation and maintenance of a series of unit and functional tests. While unit tests test the model (how the Rails code interacts with the database) the functional tests test the interfaces (how Rails is handling the user requests).
