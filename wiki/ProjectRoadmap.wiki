@@ -32,7 +32,7 @@ The work of weeks 2 and 3 is divided as follows:
 
 == Weeks 4, 5 and 6 (20/08/2007 up to 09/09/2007) ==
 
-During weeks 4, 5 and 6 the Bayesian classification will get implemented. The Bayesian Reasoning will be used to find out the learners learning style, and then to show him first the Learning Objects that are more adequate to him. 
+During weeks 4, 5 and 6 the Bayesian classification will get implemented. The Bayesian Reasoning will be used to find out the learners learning style among a few pre-defined styles, and then to show him, first, the Learning Objects that are more adequate to him. 
 
 The work of those weeks is divides as follows:
  * Integrate the Classifier library into Astra
