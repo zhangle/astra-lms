@@ -41,4 +41,4 @@ The work of those weeks is divides as follows:
 
 == Details ==
 
-Each phase includes the creation and maintenance of a series of unit and functional tests. While unit tests test the model (how the Rails code interacts with the database) the functional tests test the interfaces (how Rails is handling the user requests).
+Each phase includes the creation and maintenance of a series of unit and functional tests. While unit tests focus the model (how the Rails code interacts with the database) the functional tests focus the interfaces (how Rails is handling the user requests).
