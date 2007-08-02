@@ -3,11 +3,11 @@ class CreateCourses < ActiveRecord::Migration
     create_table :courses do |t|
       t.column 'full_name',    :string,   :null => false, :limit => 100
       t.column 'short_name',   :string,   :null => false, :limit => 10
-      t.column 'description',  :text,     :null => false
-      t.column 'started_at',   :datetime, :null => false
-      t.column 'finished_at',  :datetime, :null => false
-      t.column 'max_students', :integer,  :null => false, :limit => 3
-      t.column 'visible',      :boolean,  :null => false, :default => true
+      t.column 'description',  :text
+      t.column 'started_at',   :datetime
+      t.column 'finished_at',  :datetime
+      t.column 'max_students', :integer
+      t.column 'visible',      :boolean,  :null => false, :default => false
     end
   end
 
