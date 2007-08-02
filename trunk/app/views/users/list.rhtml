@@ -1,0 +1,24 @@
+<h1><%= 'Users' %></h1>
+
+<table id="users" class="record_list">
+  <tr>
+    <th><%= 'Full name' %></th>
+    <th><%= 'Last access' %></th>
+  </tr>
+  
+<% for user in @users %>
+  <tr>
+    <td><%= link_to user.full_name, :action => 'show', :id => user %></td>
+    <td><%= 'Never' %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => user %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => user }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @user_pages.current.previous } if @user_pages.current.previous %>
+<%= link_to 'Next page', { :page => @user_pages.current.next } if @user_pages.current.next %> 
+
+<br />
+
+<%= link_to 'Add a new user', :action => 'new' %>

@@ -1,0 +1,9 @@
+<div id="profile_container">
+  <h2 class="full_name"><%= @user.full_name %></h2>
+  <ul id="profile">
+    <li class="email"><%= 'Email' %>: <%= 'Email' %></li>
+    <li class="last_access"><%= 'Last access' %>: <%= 'Never' %></li>
+  </ul>
+</div>
+
+<%= link_to 'Edit', :action => 'edit', :id => @user %>
