@@ -1,5 +1,5 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-one:
+first:
   id: 1
-two:
-  id: 2
+  full_name: The Ruby Programming Language
+  short_name: Ruby

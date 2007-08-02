@@ -5,13 +5,13 @@
 ActiveRecord::Schema.define(:version => 1) do
 
   create_table "courses", :force => true do |t|
-    t.column "full_name",    :string,   :limit => 100, :default => "",   :null => false
-    t.column "short_name",   :string,   :limit => 10,  :default => "",   :null => false
-    t.column "description",  :text,                    :default => "",   :null => false
-    t.column "started_at",   :datetime,                                  :null => false
-    t.column "finished_at",  :datetime,                                  :null => false
-    t.column "max_students", :integer,  :limit => 3,                     :null => false
-    t.column "visible",      :boolean,                 :default => true, :null => false
+    t.column "full_name",    :string,   :limit => 100, :default => "",    :null => false
+    t.column "short_name",   :string,   :limit => 10,  :default => "",    :null => false
+    t.column "description",  :text
+    t.column "started_at",   :datetime
+    t.column "finished_at",  :datetime
+    t.column "max_students", :integer
+    t.column "visible",      :boolean,                 :default => false, :null => false
   end
 
 end

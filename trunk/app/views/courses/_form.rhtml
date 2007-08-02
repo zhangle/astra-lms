@@ -1,0 +1,25 @@
+<%= error_messages_for 'course' %>
+
+<!--[form:course]-->
+<p><label for="course_full_name">Full name</label><br/>
+<%= text_field 'course', 'full_name'  %></p>
+
+<p><label for="course_short_name">Short name</label><br/>
+<%= text_field 'course', 'short_name'  %></p>
+
+<p><label for="course_description">Description</label><br/>
+<%= text_area 'course', 'description'  %></p>
+
+<p><label for="course_started_at">Started at</label><br/>
+<%= datetime_select 'course', 'started_at'  %></p>
+
+<p><label for="course_finished_at">Finished at</label><br/>
+<%= datetime_select 'course', 'finished_at'  %></p>
+
+<p><label for="course_max_students">Max students</label><br/>
+<%= text_field 'course', 'max_students'  %></p>
+
+<p><label for="course_visible">Visible</label><br/>
+<select id="course_visible" name="course[visible]"><option value="false">False</option><option value="true" selected>True</option></select></p>
+<!--[eoform:course]-->
+
