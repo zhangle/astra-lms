@@ -1,10 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 peter:
   id: 1
-  login: peter
+  username: peter
   crypted_password: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 # test
   first_name: Peter
   last_name: Petrelli
   email: peter@example.com
+  description: A Ruby programmer.
   created_at: <%= 5.days.ago.to_s :db %>
   updated_at: <%= 5.days.ago.to_s :db %>

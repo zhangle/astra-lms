@@ -50,9 +50,9 @@ class UsersControllerTest < Test::Unit::TestCase
   end
 
   def test_create
-    num_users = Users.count
+    num_users = User.count
 
-    post :create, :user => {:login => 'nathan',
+    post :create, :user => {:username => 'nathan',
                             :password => 'nathan',
                             :first_name => 'Natan',
                             :last_name => 'Petrelli',
@@ -61,7 +61,7 @@ class UsersControllerTest < Test::Unit::TestCase
     assert_response :redirect
     assert_redirected_to :action => 'list'
 
-    assert_equal num_users + 1, Users.count
+    assert_equal num_users + 1, User.count
   end
 
   def test_edit
@@ -82,7 +82,7 @@ class UsersControllerTest < Test::Unit::TestCase
 
   def test_destroy
     assert_nothing_raised {
-      Users.find(@peter_id)
+      User.find(@peter_id)
     }
 
     post :destroy, :id => @peter_id
@@ -90,7 +90,7 @@ class UsersControllerTest < Test::Unit::TestCase
     assert_redirected_to :action => 'list'
 
     assert_raise(ActiveRecord::RecordNotFound) {
-      Users.find(@peter_id)
+      User.find(@peter_id)
     }
   end
 end

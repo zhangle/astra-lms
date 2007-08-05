@@ -16,13 +16,14 @@ CREATE TABLE `schema_info` (
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,
-  `login` varchar(40) NOT NULL,
-  `crypted_password` varchar(40) NOT NULL,
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL,
+  `username` varchar(255) default NULL,
+  `crypted_password` varchar(255) default NULL,
+  `first_name` varchar(255) default NULL,
+  `last_name` varchar(255) default NULL,
+  `email` varchar(255) default NULL,
+  `description` varchar(255) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

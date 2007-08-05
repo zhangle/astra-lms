@@ -15,13 +15,14 @@ ActiveRecord::Schema.define(:version => 2) do
   end
 
   create_table "users", :force => true do |t|
-    t.column "login",            :string,   :limit => 40,  :default => "", :null => false
-    t.column "crypted_password", :string,   :limit => 40,  :default => "", :null => false
-    t.column "first_name",       :string,                  :default => "", :null => false
-    t.column "last_name",        :string,                  :default => "", :null => false
-    t.column "email",            :string,   :limit => 100, :default => "", :null => false
-    t.column "created_at",       :datetime,                                :null => false
-    t.column "updated_at",       :datetime,                                :null => false
+    t.column "username",         :string
+    t.column "crypted_password", :string
+    t.column "first_name",       :string
+    t.column "last_name",        :string
+    t.column "email",            :string
+    t.column "description",      :string
+    t.column "created_at",       :datetime
+    t.column "updated_at",       :datetime
   end
 
 end
