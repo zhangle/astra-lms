@@ -1,13 +1,6 @@
 class LoginController < ApplicationController
   before_filter :authorize, :except => :login
 
-  def authorize
-    unless session[:user_id]
-      flash[:notice] = 'Please log in'
-      redirect_to :controller => 'login', :action => 'login'
-    end
-  end
-
   def login
     if request.get?
       session[:user_id] = nil

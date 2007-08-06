@@ -1,5 +1,5 @@
-<label for="user_username">Username</label><br/>
-<%= text_field 'user', 'username' %>
+<p class="username label"><label for="user_username"><%= 'Username:' %></label></p>
+<p class="text input"><%= text_field 'user', 'username', :class => 'text' %></p>
 
-<label for="user_password">Password</label><br/>
-<%= password_field 'user', 'password' %></p>
+<p class="password label"><label for="user_password"><%= 'Password:' %></label></p>
+<p class="password input"><%= password_field 'user', 'password', :class => 'text' %></p>
