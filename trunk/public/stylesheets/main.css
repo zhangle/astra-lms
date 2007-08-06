@@ -1,4 +1,8 @@
-body { background-color: #fff; color: #333; }
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -7,11 +11,11 @@ body, p, ol, ul, td {
 }
 
 #header {
-  height: 150px;
-  background-color: #fafafa;
+  height: 100px;
   border-style: solid;
-  border-width: 1px 0;
+  border-width: 0 0 1px 0;
   border-color: silver;
+  background-color: #fafafa;
 }
 
 #header .toolbar {
@@ -32,4 +36,8 @@ body, p, ol, ul, td {
 
 #header .toolbar a:hover {
   text-decoration: underline;
+}
+
+#content {
+  margin: 0 6px;
 }
