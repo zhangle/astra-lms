@@ -10,6 +10,15 @@ class CreateUsers < ActiveRecord::Migration
       t.column 'created_at', :datetime
       t.column 'updated_at', :datetime
     end
+    admin = User.new do |u|
+      u.username = 'admin'
+      u.password = 'astra'
+      u.first_name = 'Admin'
+      u.last_name = 'User'
+      u.email = 'admin@localhost.com'
+      u.description = 'The system primary administrator.'
+    end
+    admin.save
   end
 
   def self.down
