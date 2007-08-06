@@ -1,7 +1,7 @@
 require 'digest/sha1'
 class User < ActiveRecord::Base
   attr_accessor :password
-
+  
   validates_presence_of   :username, :first_name, :last_name, :email, :message => 'is required'
   validates_presence_of   :password, :if => :password_required?
   validates_length_of     :first_name, :last_name, :minimum => 2, :message => 'must have at least %d characters'
@@ -17,6 +17,14 @@ class User < ActiveRecord::Base
 
   def full_name
     "#{first_name} #{last_name}" # i18n will handle it better
+  end
+
+  def self.login(username, password)
+    find(:first, :conditions => ["username = ? and crypted_password = ?", username, Digest::SHA1.hexdigest(password)])
+  end
+
+  def try_to_login
+    User.login(self.username, self.password)
   end
 
   protected

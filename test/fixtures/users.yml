@@ -9,3 +9,13 @@ peter:
   description: A Ruby programmer.
   created_at: <%= 5.days.ago.to_s :db %>
   updated_at: <%= 5.days.ago.to_s :db %>
+bart:
+  id: 2
+  username: bart
+  crypted_password: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 # test
+  first_name: Bart
+  last_name: Simpson
+  email: bart@example.com
+  description: A little boy.
+  created_at: <%= 5.days.ago.to_s :db %>
+  updated_at: <%= 5.days.ago.to_s :db %>
