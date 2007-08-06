@@ -17,7 +17,7 @@ class LoginController < ApplicationController
       logged_in_user = @user.try_to_login
       if logged_in_user
         session[:user_id] = logged_in_user
-        jumpto = session[:jumpto] || {:action => 'index'}
+        jumpto = session[:jumpto] || {:controller => 'home', :action => 'index'}
         session[:jumpto] = nil
         redirect_to(jumpto)
       else
@@ -29,6 +29,6 @@ class LoginController < ApplicationController
   def logout
     session[:user_id] = nil
     flash[:notice] = 'You are now logged out'
-    redirect_to :action => 'login'
+    redirect_to :controller => 'home', :action => 'index'
   end
 end
