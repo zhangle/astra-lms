@@ -1,11 +1,13 @@
 <h1>Available courses</h1>
 
+<div id="courses_list">
 <% for course in @courses %>
-<div class="course">
-  <h2><%= link_to "#{course.short_name} - #{course.full_name}", :action => 'show', :id => course %></h2>
-  <p><%=h course.description %></p>
-</div>
+  <div class="course">
+    <h2><%= link_to "#{course.short_name} - #{course.full_name}", :action => 'show', :id => course %></h2>
+    <p><%=h course.description %></p>
+  </div>
 <% end %>
+</div>
 
 <div class="paginator">
 <%= link_to 'Previous page', { :page => @course_pages.current.previous } if @course_pages.current.previous %>

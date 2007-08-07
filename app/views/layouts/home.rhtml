@@ -9,20 +9,59 @@
 </head>
 <body>
 
-  <div id="header">
-    <ul class="toolbar">
-      <li><%= login_info %></li>
-      <li><%= login_or_logout %></li>
-    </ul>
-  </div>
+  <div id="wrapper">
 
-  <div id="content">
-  <p style="color: green"><%= flash[:notice] %></p>
-  <%= yield  %>
-  </div>
+    <div id="header">
+      <ul id="tool_bar">
+        <li id="login_info"><%= login_info %></li>
+        <li id="login_or_logout"><%= login_or_logout %></li>
+      </ul>
+    </div>
 
-  <div id="footer">
-  </div>
+    <!--
+    <div id="bread_crumb">
+    </div>
+    -->
+
+    <div id="main_nav">
+
+      <div class="side_block">
+        <div class="header"><h2>Main Menu</h2></div>
+        <ul>
+          <li><%= link_to 'Courses', :controller => 'courses', :action => 'list' %></li>
+          <li><%= link_to 'Users', :controller => 'users', :action => 'list' %></li>
+        </ul>
+      </div>
+
+    </div> <!-- main_nav -->
+
+    <div id="content">
+
+      <div id="main_content">
+        <p id="flash_notice"><%= flash[:notice] %></p>
+        <%= yield  %>
+      </div> <!-- main_content -->
+
+      <div id="secondary_content">
+
+        <div class="side_block">
+          <div class="header"><h2>My Astra</h2></div>
+          <ul>
+            <li><%= link_to 'My Profile', :controller => 'courses', :action => 'list' %></li>
+            <li><%= link_to 'My Communities', :controller => 'communities', :action => 'list' %></li>
+            <li><%= link_to 'My Contacts', :controller => 'contacts', :action => 'list' %></li>
+          </ul>
+        </div>
+
+      </div> <!-- secondary_content -->
+
+    </div> <!-- content -->
+
+
+    <div id="footer">
+    </div>
+
+  </div> <!-- wrapper -->
 
 </body>
 </html>
