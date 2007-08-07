@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  layout 'home'
   before_filter :authorize
 
   def index

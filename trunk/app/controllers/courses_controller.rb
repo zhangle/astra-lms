@@ -1,4 +1,5 @@
 class CoursesController < ApplicationController
+  layout 'home'
   before_filter :authorize
 
   def index
