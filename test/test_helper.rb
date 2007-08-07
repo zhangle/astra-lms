@@ -25,4 +25,18 @@ class Test::Unit::TestCase
   self.use_instantiated_fixtures  = false
 
   # Add more helper methods to be used by all tests here...
+
+=begin
+Use this method when you want to test a controller action that requires the
+user to be logged in.
+=end
+  fixtures :users
+  def login(username='bart', password='astra')
+    old_controller = @controller
+    @controller = LoginController.new
+    post :login, :user => {:username => username, :password => password}
+    #assert_redirected_to :controller => 'home', :action => 'index'
+    assert_not_nil session[:user_id]
+    @controller = old_controller
+  end
 end

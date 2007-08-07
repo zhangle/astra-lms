@@ -2,7 +2,7 @@
 peter:
   id: 1
   username: peter
-  crypted_password: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 # test
+  crypted_password: d7a77ed40c7e98fe062351800b840e838f4efdc7 # astra
   first_name: Peter
   last_name: Petrelli
   email: peter@example.com
@@ -12,7 +12,7 @@ peter:
 bart:
   id: 2
   username: bart
-  crypted_password: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 # test
+  crypted_password: d7a77ed40c7e98fe062351800b840e838f4efdc7 # astra
   first_name: Bart
   last_name: Simpson
   email: bart@example.com
