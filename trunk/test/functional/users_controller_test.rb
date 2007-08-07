@@ -13,6 +13,8 @@ class UsersControllerTest < Test::Unit::TestCase
     @response   = ActionController::TestResponse.new
 
     @peter_id = users(:peter).id
+
+    login
   end
 
   def test_index

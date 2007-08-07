@@ -26,7 +26,7 @@ class LoginControllerTest < Test::Unit::TestCase
   end
 
   def test_login_with_valid_user
-    post :login, :user => {:username => 'bart', :password => 'test'}
+    post :login, :user => {:username => 'bart', :password => 'astra'} # stupid - you should be using the fixture
     assert_redirected_to :controller => 'home', :action => 'index'
     assert_not_nil session[:user_id]
     user = User.find(session[:user_id])
@@ -34,7 +34,7 @@ class LoginControllerTest < Test::Unit::TestCase
   end
 
   def test_logout
-    post :login, :user => {:username => 'bart', :password => 'test'}
+    post :login, :user => {:username => 'bart', :password => 'astra'} # stupid - you should be using the fixture
     assert_redirected_to :controller => 'home', :action => 'index'
     assert_not_nil session[:user_id]
     get :logout
