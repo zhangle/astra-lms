@@ -18,10 +18,15 @@
       </ul>
     </div>
 
-    <!--
+    <% unless controller.controller_name == 'home' -%>
     <div id="bread_crumb">
+      <ul>
+        <li><%= link_to 'Home', :controller => 'home', :action => 'index' %> &#x25BA; </li>
+        <li><%= link_to controller.controller_name.humanize, :action => 'index' %> &#x25BA; </li>
+        <li><%= controller.action_name.humanize %></li>
+      </ul>
     </div>
-    -->
+    <% end -%>
 
     <div id="main_nav">
 
@@ -30,8 +35,20 @@
         <ul>
           <li><%= link_to 'Courses', :controller => 'courses', :action => 'list' %></li>
           <li><%= link_to 'Users', :controller => 'users', :action => 'list' %></li>
+          <li><%= link_to 'LOs Repository', :controller => 'scorm', :action => 'list' %></li>
         </ul>
       </div>
+
+      <% if controller.controller_name == 'courses' && @course -%>
+      <div class="side_block">
+        <div class="header"><h2>Course Menu</h2></div>
+        <ul>
+          <li><%= link_to 'Settings', :controller => 'courses', :action => 'edit', :id => @course %></li>
+          <li><%= link_to 'Teachers', :controller => 'teachers', :action => 'list', :context => 'course', :id => @course %></li>
+          <li><%= link_to 'Students', :controller => 'students', :action => 'list', :context => 'course', :id => @course %></li>
+        </ul>
+      </div>
+      <% end -%>
 
     </div> <!-- main_nav -->
 
@@ -50,6 +67,7 @@
             <li><%= link_to 'My Profile', :controller => 'courses', :action => 'list' %></li>
             <li><%= link_to 'My Communities', :controller => 'communities', :action => 'list' %></li>
             <li><%= link_to 'My Contacts', :controller => 'contacts', :action => 'list' %></li>
+            <li><%= link_to 'My Favorite LOs', :controller => 'contacts', :action => 'list' %></li>
           </ul>
         </div>
 

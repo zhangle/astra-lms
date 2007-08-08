@@ -54,6 +54,21 @@ input[type="submit"] {
   text-decoration: underline;
 }
 
+#bread_crumb {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+#bread_crumb ul {
+  margin: 0.5em;
+  padding: 0;
+}
+
+#bread_crumb ul li {
+  display: inline;
+  padding: 0;
+}
+
 #main_nav {
   float: left;
   width: 14em;
