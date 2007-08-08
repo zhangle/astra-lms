@@ -1,0 +1,57 @@
+/**
+ * Global styles
+ */
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1.0em;
+}
+
+/**
+ * The default layout
+ */
+
+#tool_bar {
+  font-size: 0.9em;
+}
+
+.side_block .header h2 {
+  font-size: 1.0em;
+}
+
+.side_block ul li {
+  font-size: 0.9em;
+}
+
+#main_content p, ol, ul, td {
+  font-size: 0.9em;
+}
+
+/**
+ * The login subsystem
+ */
+
+#login_box .header {
+  font-size: 22px;
+}
+
+#login_box input.text {
+  font-size: 22px;
+}

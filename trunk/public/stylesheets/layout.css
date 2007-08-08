@@ -1,0 +1,154 @@
+/**
+ * Global styles
+ */
+
+body {
+  margin: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  padding: 4px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/**
+ * The default layout
+ */
+
+#wrapper {
+  width: 72em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  height: 100px;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  background: transparent url(/images/astra.logo.png) 10px 50% no-repeat; /* need to seperate this between color and layout */
+}
+
+#tool_bar {
+  list-style-type: none;
+  float: right;
+}
+
+#tool_bar li {
+  margin: 0 0.25em;
+  float: left;
+}
+
+#tool_bar a:link,
+#tool_bar a:visited {
+  text-decoration: none;
+}
+
+#tool_bar a:hover {
+  text-decoration: underline;
+}
+
+#main_nav {
+  float: left;
+  width: 18em;
+  max-width: 23%;
+  padding-left: 0.5em;
+}
+
+.side_block {
+  margin-bottom: 10px;
+}
+
+.side_block ul {
+  list-style-type: square;
+  margin-left: 0;
+  padding-left: 2em;
+}
+
+.side_block ul li a:link,
+.side_block ul li a:visited,
+.side_block ul li a:hover {
+  text-decoration: none;
+}
+
+#content {
+  width: 53em;
+  max-width: 75%;
+  float: right;
+}
+
+#main_content {
+  width: 33em;
+  max-width: 66%;
+  float: left;
+  padding-left: 0.5em;
+}
+
+#secondary_content {
+  width: 18em;
+  max-width: 31%;
+  float: right;
+  padding-left: 0.5em;
+}
+
+#footer {
+  clear: both;
+}
+
+/**
+ * The login subsystem
+ */
+
+#login_box_container {
+  padding: 2px;
+  border-style: solid;
+  border-width: 1px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px;
+}
+
+#login_box {
+  width: 280px;
+  margin: 0;
+  padding: 20px;
+}
+
+#login_box .header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#login_box p.username,
+#login_box p.password {
+  margin-bottom: 0;
+}
+
+#login_box p.input {
+  margin-top: 2px;
+}
+
+#login_box input.text {
+  width: 100%;
+  height: 26px;
+}
+
+#login_box .submit.button {
+  margin: 30px 0 0 0;
+  text-align: right;
+}
+
+/**
+ * The courses subsystem
+ */
+
+#courses_list a:link,
+#courses_list a:visited,
+#courses_list a:hover {
+  text-decoration: none;
+}
