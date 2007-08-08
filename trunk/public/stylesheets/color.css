@@ -6,6 +6,12 @@ body {
   color: #333;
 }
 
+a:link,
+a:visited,
+a:hover {
+  color: green;
+}
+
 input[type="submit"] {
   background-color: white;
   color: #2f4f4f;
@@ -28,12 +34,6 @@ input[type="submit"] {
   color: green;
 }
 
-.side_block ul li a:link,
-.side_block ul li a:visited,
-.side_block ul li a:hover {
-  color: green;
-}
-
 /**
  * The login subsystem
  */
@@ -53,14 +53,4 @@ input[type="submit"] {
 #login_box p.username,
 #login_box p.password {
   color: white;
-}
-
-/**
- * The courses subsystem
- */
-
-#courses_list a:link,
-#courses_list a:visited,
-#courses_list a:hover {
-  color: green;
 }
