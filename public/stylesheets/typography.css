@@ -28,6 +28,10 @@ h4 {
  * The default layout
  */
 
+#skip {
+  font-size: 0.7em;
+}
+
 #tool_bar {
   font-size: 0.9em;
 }
