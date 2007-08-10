@@ -12,6 +12,11 @@ a:hover {
   color: green;
 }
 
+a:hover {
+  background-color: #dcdcdc;
+  background-color: #ffe4b5;
+}
+
 input[type="submit"] {
   background-color: white;
   color: #2f4f4f;

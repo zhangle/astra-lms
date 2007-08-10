@@ -4,12 +4,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Login: <%= controller.action_name %></title>
+  <title><%= 'Astra:' %> <%= controller.controller_name.humanize %></title>
   <%= stylesheet_link_tag 'color', 'layout', 'typography' %>
 </head>
 <body>
 
   <div id="wrapper">
+
+    <p id="skip"><%= link_to 'Skip to main content', '#main' %></p>
 
     <div id="header">
       <ul id="tool_bar">
@@ -67,7 +69,7 @@
             <li><%= link_to 'My Profile', :controller => 'courses', :action => 'list' %></li>
             <li><%= link_to 'My Communities', :controller => 'communities', :action => 'list' %></li>
             <li><%= link_to 'My Contacts', :controller => 'contacts', :action => 'list' %></li>
-            <li><%= link_to 'My Favorite LOs', :controller => 'contacts', :action => 'list' %></li>
+            <li><%= link_to 'My Favourite LOs', :controller => 'contacts', :action => 'list' %></li>
           </ul>
         </div>
 
