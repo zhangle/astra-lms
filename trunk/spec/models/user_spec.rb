@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 module UserSpecHelper
-  def self.create_user(options = {})
+  def self.create_user(options={})
     User.create({:username => 'peter',
                  :password => 'peter',
                  :crypted_password => nil,
