@@ -180,3 +180,8 @@ test
 vendor
   External libraries that the application depends on. Also includes the plugins subdirectory.
   This directory is in the load path.
+  
+  
+  
+		<script async class="speakerdeck-embed" data-id="7e68b43159d646cf81eda9e1bded8213" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+		
